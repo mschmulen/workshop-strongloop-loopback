@@ -36,7 +36,7 @@ Optional Prerequisites( for Mobile SDK integration):
 ---
 
 - [Node](NODE.md)
-- [LoopoBack](LOOPBACK.md)
+- [LoopBack](LOOPBACK.md)
 - [iOS](IOS.md)
 - [Android](ANDROID.md)
 - [Deployment](DEPLOY.md)
