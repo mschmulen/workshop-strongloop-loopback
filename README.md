@@ -45,8 +45,8 @@ Optional Prerequisites( for Mobile SDK integration):
 
 ##iOS Workshop App
 
-<img src="https://raw.github.com/mschmulen/workshop-strongloop-loopback/master/Screenshots/workshop-app-ios-01.png" alt="tab Home" height="209" width="120">
-<img src="https://raw.github.com/mschmulen/workshop-strongloop-loopback/master/Screenshots/workshop-app-ios-01.png" alt="tab 1" height="209" width="120">
+<img src="https://github.com/mschmulen/workshop-strongloop-loopback/blob/master/screenshots/workshop-app-ios-01.png" alt="tab Home" height="209" width="120">
+<img src="https://github.com/mschmulen/workshop-strongloop-loopback/blob/master/screenshots/workshop-app-ios-02.png" alt="tab 1" height="209" width="120">
 
 ##Android Workshop App
 
