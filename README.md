@@ -21,16 +21,18 @@ Workshop Syllabus
 
 ###Setting up your environment
 
-Requirements:
+Workshop Prerequisites:
 
-- Node.js & npm
-- [StrongLoop Command Line Interface, strong-cli](https://www.npmjs.org/package/strong-cli) :  ```npm install -g strong-cli```
+- git command-line tool
+- [Node.js & npm Current Version: v0.10.26 ](http://nodejs.org/)
+- [StrongLoop Command Line Interface, strong-cli v2.4.7](https://www.npmjs.org/package/strong-cli):```npm install -g strong-cli```
 
-Optional Requirements:
+Optional Prerequisites( for Mobile SDK integration):
 
-- Mobile Application integration :
-	- Xcode 4.6 or higher ( requires Mac OSX ): for Native iOS mobile app
-	- ADT or Android Studio: for Native Android mobile app
+- [Xcode](https://developer.apple.com/) 4.6 or higher ( requires Mac OSX ): for Native iOS mobile app
+- [Eclipse Android Developement Tools, ADT](http://developer.android.com/sdk/index.html) : for Native Android mobile app
+- At least one Android or virtual Android device, refer to [AVD Manager](http://developer.android.com/tools/help/avd-manager.html) for more information.
+
 
 ---
 
