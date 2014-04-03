@@ -29,14 +29,13 @@ Requirements:
 Optional Requirements:
 
 - Mobile Application integration :
-	- XCode ( requires OSX ): for Native iOS mobile app
+	- Xcode 4.6 or higher ( requires Mac OSX ): for Native iOS mobile app
 	- ADT or Android Studio: for Native Android mobile app
 
+---
 
-Next steps:
-
-- [Node](README-Node.md)
-- [LoopoBack](README-LoopBack.md)
-- [iOS](README-iOS.md)
-- [Android](README-Android.md)
-- [Deployment](README-Deploy.md)
+- [Node](NODE.md)
+- [LoopoBack](LOOPBACK.md)
+- [iOS](IOS.md)
+- [Android](ANDROID.md)
+- [Deployment](DEPLOY.md)
