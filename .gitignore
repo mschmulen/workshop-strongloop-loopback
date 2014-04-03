@@ -1,0 +1,39 @@
+# git config --global core.excludesfile ~/.gitignore_global
+
+###########  
+# Custom  #
+###########
+.secret
+secret.md
+
+#########
+# Xcode #
+#########
+build/*
+*.pbxuser
+*.mode2v3
+*.mode1v3
+*.xcworkspace
+xcuserdata
+*.lock
+*.swp
+*.out
+
+######################
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#######
+# npm #
+#######
+npm-debug.log
+node_modules/
+!/node_modules/
+!src/node_modules/
