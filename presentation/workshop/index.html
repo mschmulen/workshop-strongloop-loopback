@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+  <title>LoopBack Mobile Workshop</title>
+	
+  <meta name="description" content=" LoopBack Node.js Mobile Workshop">
+  <meta name="author" content="Matt Schmulen">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <!-- Core and extension CSS files -->
+  <link rel="stylesheet" media="screen" href="../core/deck.core.css">
+  <link rel="stylesheet" media="screen" href="../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="../extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="../extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../themes/style/strongloop.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="../core/print.css">
+
+  <script src="../modernizr.custom.js"></script>
+</head>
+
+<body>
+  <div class="deck-container">
+		
+    <!-- Begin slides -->
+    <section class="slide" id="title-slide">
+      <h1>LoopBack Node.js Mobile Workshop</h1>
+    </section>
+		
+    <section class="slide" id="how-to-overview">
+      <h2>Agenda</h2>
+      <ol>
+        <li>
+          <h3> <a href="00-Overview.html" class="l_courseintro">Overview</a> </h3>
+          <p> StrongLoop Overview: Node.js, LoopBack, StrongOps </p>
+        </li>
+        <li>
+          <h3> <a href="01-GettingStarted.html" class="l_courseintro">Getting Started</a> </h3>
+          <p> Getting Started with LoopBack and slc </p>
+        </li>
+        <li>
+          <h3> <a href="02-CustomizingLoopBack.html" class="l_courseintro">Customizing LoopBack</a> </h3>
+          <p> Configuring and Customizing LoopBack</p>
+        </li>
+        <li>
+          <h3> <a href="03-MobileIntegrations.html" class="l_courseintro">Integrating with Mobile</a> </h3>
+          <p> Integrating with iOS </p>
+        </li>
+				<!-- 
+        <li>
+          <h3> <a href="04-Deployment.html" class="l_courseintro">Deployment Considerations</a> </h3>
+          <p> Deploying to a cloud provider, Strong Ops </p>
+        </li>
+				-->
+      </ol>
+    </section>
+
+    <section class="slide" id="quick-start">
+      <h2>Workshop</h2>
+			
+      <ol>
+        <li>
+          <h3> Create a LoopBack Node.js API server </h3>
+        </li>
+        <li>
+          <h3> Configure </h3>
+        </li>
+        <li>
+          <h3> Customize </h3>
+        </li>
+        <li>
+          <h3> Integrate with our Mobile application </h3>
+        </li>
+				<!-- 
+        <li>
+          <h3> Deploy </h3>
+        </li>
+				-->
+      </ol>
+    </section>
+		
+		<section class="slide" id="how-to-overview">
+      <h2> Next Section </h2>
+      <h3> <a href="00-Overview.html" class="l_courseintro">Overview </a> </h3>
+    </section>
+		
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+  </div>
+
+<script src="../jquery.min.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="../core/deck.core.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+<script src="../extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+  $.deck('.slide');
+});
+</script>
+
+</body>
+</html>

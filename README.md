@@ -6,10 +6,11 @@ Workshop Syllabus
 1. Setting up your environment ( Prerequisites )
 1. LoopBack Node.js Mobile backend overview
 1. Creating your first LoopBack Node.js app with slc
-1. Customizing and configuring LoopBack
-  1. Initialization via boot folder
-	1. Customizing web root
-	1. Binding to a data store ( MonogoDB )
+  1. Customizing and configuring LoopBack
+    1. Initialization via boot folder
+	  1. Customizing web root
+	  1. Binding to a data store ( MonogoDB )
+    1. Storage service
 1. Exploring the LoopBack API
 	1. LoopBack /explorer/
 	1. Advanced features Filter and Find
@@ -17,7 +18,8 @@ Workshop Syllabus
 1. Integrating your Mobile Application
 	1. Native iOS SDK
 	1. Native Android SDK
-1. Deployment considurations: Providers, StrongOps
+1. Deployment considerations: Providers, StrongOps
+
 
 ###Setting up your environment
 
@@ -50,5 +52,9 @@ Optional Prerequisites( for Mobile SDK integration):
 
 ##Android Workshop App
 
+
+##Presentation
+
+- [Workshop Slides](presentation/workshop/index.html)
 
 

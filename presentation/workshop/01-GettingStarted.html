@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Getting Started</title>
+
+  <meta name="description" content="A jQuery library for modern HTML presentations">
+  <meta name="author" content="Caleb Troughton">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+	
+  <!-- Core and extension CSS files -->
+  <link rel="stylesheet" media="screen" href="../core/deck.core.css">
+  <link rel="stylesheet" media="screen" href="../extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="../extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="../extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="../extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="../extensions/scale/deck.scale.css">
+	
+	<!-- include code mirror default css and the theme you want. -->
+	<link rel="stylesheet" href="../codemirror/deck.codemirror.css">
+	<link rel="stylesheet" href="../codemirror/themes/default.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../themes/style/strongloop.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="../themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="../core/print.css">
+
+  <script src="../modernizr.custom.js"></script>
+</head>
+
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides -->
+    <section class="slide" id="title-slide">
+      <h1>Getting Started with LoopBack</h1>
+    </section>
+		
+    <section class="slide" id="how-to-overview">
+      <h2>Prerequisites</h2>
+      <ol>
+        <li>
+          <h3><a href="http://nodejs.org/" class="l_courseintro">Node.js & npm Current Version: v0.10.26</a></h3>
+        </li>
+        <li>
+          <h3><a href="https://www.npmjs.org/package/strong-cli" class="l_courseintro">strong-cli</a></h3>
+        </li>
+        <li>
+          <h3> git command-line tool </h3>
+        </li>
+        <li>
+          <h3> <a href="https://developer.apple.com/" class="l_courseintro">Xcode</a> Xcode 4.6 or higher ( requires Mac OSX ): for Native iOS mobile app </h3>
+        </li>
+        <li>
+          <h3> <a href="http://developer.android.com/sdk/index.html" class="l_courseintro">Eclipse Android Developement Tools</a> Eclipse Android Developement Tools, ADT : for Native Android mobile app </h3>
+        </li>
+        <li>
+          <h3> At least one Android or virtual Android device, refer to AVD Manager for more information. </h3>
+        </li>
+      </ol>
+    </section>
+		
+    <section class="slide" id="start-mkdir">
+    <h2>Installing slc </h2>
+      <p>Install strong-cli command line utility from npm</p>
+      <pre><code>npm install -g strong-cli</pre></code>
+				<pre><code>slc --help </pre></code>
+    </section>
+		
+    <section class="slide" id="start-mkdir">
+    <h2>Start your project </h2>
+      <p>Create a folder for our project:</p>
+      <pre><code>
+        mkdir workshop-strongloop-loopback
+        cd workshop-strongloop-loopback
+      </pre></code>
+    </section>
+
+    <section class="slide" id="start-slc">
+    <h2>Create your LoopBack Node.js project </h2>
+    <p>Create your LoopBack Node.js server with the slc command: <p>
+    <pre><code>
+      slc lb project node-server
+      cd node-server </pre></code>
+    <p> </p>
+    </section>
+
+  <section class="slide" id="start-slc">
+    <h2>Give it a run </h2>
+      <p> Start your loopback Node.js server: </p>
+      <code> slc run app.js </code>
+  </section>
+	
+  <section class="slide" id="start-slc">
+    <h2>Give it a run in the debugger </h2>
+      <p> Debug your loopback Node.js server: </p>
+      <code> slc debug app.js </code>
+  </section>
+	
+    <section class="slide" id="how-to-overview">
+      <h2> Next Section </h2>
+      <h3> <a href="02-CustomizingLoopBack.html" class="l_courseintro">Customizing LoopBack</a> </h3>
+    </section>
+		
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+		
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+  </div>
+
+<script src="../jquery.min.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="../core/deck.core.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+<script src="../extensions/scale/deck.scale.js"></script>
+
+<!-- include the base codemirror code. -->
+<script src="../codemirror/codemirror.js"></script>
+
+<!-- include the code syntax you want to highlight -->
+	<!-- javascript -->
+  <script src="../mode/javascript/javascript.js"></script>
+
+  <!-- html mode : note code miror requires xml, css and javasript modes for html rendering -->
+  <script src="../mode/xml/xml.js"></script>
+  <script src="../mode/css/css.js"></script>
+  <script src="../mode/htmlmixed/htmlmixed.js"></script>
+
+	<script src="../codemirror/deck.codemirror.js"></script>
+
+  	<!-- include the code syntax you want to highlight -->
+	<!-- javascript -->
+  <script src="../mode/javascript/javascript.js"></script>
+
+  <!-- html mode : note code miror requires xml, css and javasript modes for html rendering -->
+  <script src="../mode/xml/xml.js"></script>
+  <script src="../mode/css/css.js"></script>
+  <script src="../mode/htmlmixed/htmlmixed.js"></script>
+
+	<script src="../codemirror/deck.codemirror.js"></script>
+
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+  $.deck('.slide');
+});
+</script>
+
+</body>
+</html>
