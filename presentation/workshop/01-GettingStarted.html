@@ -39,7 +39,7 @@
 
 <body>
   <div class="deck-container">
-
+		
     <!-- Begin slides -->
     <section class="slide" id="title-slide">
       <h1>Getting Started with LoopBack</h1>
@@ -110,6 +110,22 @@
     <h2>Give it a run in the debugger </h2>
       <p> Debug your loopback Node.js server: </p>
       <pre> <code> slc debug app.js </code> </pre>
+  </section>
+	
+  <section class="slide" id="start-slc">
+    <h2> slc example </h2>
+      <p>Take the easy way </p>
+      <pre> <code>
+	$ slc example
+	cd sls-sample-app
+	…
+
+	$slc lb datasource mongo --connector mongodb
+	$slc strongops
+	$slc run app.js
+	…
+	$node bin/create-load.js
+		</code> </pre>
   </section>
 	
     <section class="slide" id="how-to-overview">
