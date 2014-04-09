@@ -48,17 +48,52 @@
     </section>
 		
     <section class="slide" id="how-to-overview">
-      <h2> Integration walkthrough </h2>
-      <img src="images/sample-examples-ios-all.png" alt="Slide01">
-    </section>
+			 <h2> Configure an Adapter </h2>
+		<pre> <code> 
+//@property (strong, nonatomic) LBRESTAdapter * adapter;
+- (LBRESTAdapter *) adapter
+{
+	if( !_adapter)
+		_adapter = [LBRESTAdapter adapterWithURL:[NSURL URLWithString:@"http://localhost:3000/api/"]];
+			return _adapter;
+}
+		</pre> </code> 
+		</section>
 		
     <section class="slide" id="how-to-overview">
-      <h2> Digging deeper </h2>
-      <h3> <a href="http://strongloop.com" class="l_courseintro">StrongLoop.com</a> </h3>
-      <h3> <a href="http://docs.strongloop.com/" class="l_courseintro"> docs.strongloop.com </a> </h3>
-			<h3> <a href="http://strongloop.com/strongblog/" class="l_courseintro"> StrongLoop Blog </a> </h3>
-    </section>
-		
+			 <h2> Get your model instances</h2>
+		<pre> <code> 
+void (^loadErrorBlock)(NSError *) = ^(NSError *error) {
+	NSLog( @"Error %@", error.description);
+	};//end selfFailblock
+
+void (^loadSuccessBlock)(NSArray *) = ^(NSArray *models) {
+    NSLog( @"selfSuccessBlock %d", models.count);
+    self.tableData  = models;
+    [self.myTableView reloadData];
+};//end selfSuccessBlock
+
+LBModelRepository *objectB = [[self adapter] repositoryWithModelName:prototypeName];
+
+[objectB allWithSuccess: loadSuccessBlock failure: loadErrorBlock];
+		</pre> </code> 
+		</section>
+			
+	    <section class="slide" id="how-to-overview">
+	      <h2> iOS / Android / AngularJS - Examples </h2>
+  			 <h3> <a href="https://github.com/strongloop-community/loopback-examples-ios" class="l_courseintro">github.com/strongloop-community </a> </h3>
+				
+	      <img src="images/sample-examples-ios-all.png" alt="Slide01">
+				
+	    </section>
+			
+	    <section class="slide" id="how-to-overview">
+	      <h2> Digging deeper </h2>
+	      <h3> <a href="http://strongloop.com" class="l_courseintro">StrongLoop.com</a> </h3>
+	      <h3> <a href="http://docs.strongloop.com/" class="l_courseintro"> docs.strongloop.com </a> </h3>
+				<h3> <a href="http://strongloop.com/strongblog/" class="l_courseintro"> StrongLoop Blog </a> </h3>
+	    </section>
+			
 		<!-- 
    <section class="slide" id="how-to-overview">
      <h2> Next Section </h2>
