@@ -35,7 +35,7 @@
 
 <body>
   <div class="deck-container">
-
+		
     <!-- Begin slides -->
     <section class="slide" id="title-slide">
       <h1>Customizing Loopback</h1>
@@ -45,9 +45,9 @@
 	    <h2>Configure custom models </h2>
 	    <p>Customize your model types with `slc lb model`<p>
 	      <pre><code>
-	        slc lb model product
-	        slc lb model customer
-	        slc lb model location
+slc lb model product
+slc lb model customer
+slc lb model location
 	      </pre></code>
 				
 			 <h3> <a href="http://localhost:3000/explorer" class="l_courseintro">http://localhost:3000/explorer</a> </h3>
@@ -64,9 +64,9 @@
 		  <section class="slide" id="configure-boot">
 		    <h2>Configure initialization 'boot'</h2>
 	      <pre><code>
-					mkdir public
-					cd public
-					touch index.html
+mkdir public
+cd public
+touch index.html
 	      </pre></code>
 				
 				 <h3> <a href="http://localhost:3000/" class="l_courseintro">http://localhost:3000/</a> </h3>
@@ -76,45 +76,51 @@
 	  <section class="slide" id="configure-root">
 	    <h2>Configure initialization 'boot'</h2>
       <pre><code>
-				mkdir boot
-				cd boot
-				touch initCustomer.js
-				touch initLocation.js
-				touch initProduct.js
+mkdir boot
+cd boot
+touch initCustomer.js
+touch initLocation.js
+touch initProduct.js
       </pre></code>
 	 	</section>
 
 	  <section class="slide" id="configure-root">
 	    <h2>initProduct.js</h2>
-      <pre><code>
+      <pre><code>var loopback = require('loopback');
+var app = require('../app');
 				
-				var loopback = require('loopback');
-				var app = require('../app');
-				
-				var myInstances = [
-				{"name":"productA", "description":"description A", "inventory":11, "price" :66.34, "UPC": "127890" },
-				{"name":"productB", "description":"description B", "inventory":22, "price" :22.34, "UPC": "127891" },
-				{"name":"productC", "description":"description C", "inventory":33, "price" :11.54, "UPC": "127892" },
-				{"name":"productD", "description":"description D", "inventory":44, "price" :9.24, "UPC": "123893" },
-				{"name":"productE", "description":"description E", "inventory":55, "price" :2.24, "UPC": "123894" }
-				];
+var myInstances = [
+	{"name":"productA", "description":"description A", "inventory":11, "price" :66.34, "UPC": "127890" },
+	{"name":"productB", "description":"description B", "inventory":22, "price" :22.34, "UPC": "127891" },
+	{"name":"productC", "description":"description C", "inventory":33, "price" :11.54, "UPC": "127892" },
+	{"name":"productD", "description":"description D", "inventory":44, "price" :9.24, "UPC": "123893" },
+	{"name":"productE", "description":"description E", "inventory":55, "price" :2.24, "UPC": "123894" }
+];
 
-				for( var i = 0 ; i <myInstances.length ; i ++ ) 
-				{
-					var myModel = app.models.product;
-					myModel.create( myInstances[i]);
-				}//end for
+for( var i = 0 ; i <myInstances.length ; i ++ ) 
+{
+	var myModel = app.models.product;
+	myModel.create( myInstances[i]);
+}//end for
 				
       </pre></code>
 	 	</section>
 		
+		
+	  <section class="slide" id="configure-root">
+	    <h2>Additional configurations </h2>
+			<p> Bind to a Data Store ( MongoDB )</p>
+      <pre><code> slc lb datasource mongo --connector mongodb </pre></code>
+			<p> Configure ACL's </p>
+      <pre><code> slc lb acl --allow --owner --read --write --model account </pre></code>
+	 	</section>
+		
 	  <section class="slide" id="configure-boot">
 	    <h2>Run </h2>
-      <pre><code>
-				slc run app.js
-				*node app.js
-      </pre></code>
-			
+			<p> run with slc </p>
+      <pre><code>  slc run app.js     </pre></code>
+			<p> run with node </p>
+      <pre><code>  node app.js     </pre></code>
 			<h3> <a href="http://localhost:3000/api/products" class="l_courseintro">http://localhost:3000/api/products</a> </h3>
 			
 	 </section>
