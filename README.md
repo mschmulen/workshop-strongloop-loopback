@@ -35,13 +35,10 @@ Optional Prerequisites( for Mobile SDK integration):
 - [Eclipse Android Developement Tools, ADT](http://developer.android.com/sdk/index.html) : for Native Android mobile app
 - At least one Android or virtual Android device, refer to [AVD Manager](http://developer.android.com/tools/help/avd-manager.html) for more information.
 
----
 
-- [Node](NODE.md)
-- [LoopBack](LOOPBACK.md)
-- [iOS](IOS.md)
-- [Android](ANDROID.md)
-- [Deployment](DEPLOY.md)
+##LoopBack Node.js Workshop App
+
+- [loopback-node-server/app.js](loopback-node-server/app.js)
 
 ---
 
@@ -49,8 +46,6 @@ Optional Prerequisites( for Mobile SDK integration):
 
 <img src="https://raw.github.com/mschmulen/workshop-strongloop-loopback/master/screenshots/workshop-app-ios-01.png" alt="tab Home" height="209" width="120">
 <img src="https://raw.github.com/mschmulen/workshop-strongloop-loopback/master/screenshots/workshop-app-ios-02.png" alt="tab 1" height="209" width="120">
-
-##Android Workshop App
 
 
 ##Presentation
